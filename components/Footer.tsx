@@ -112,17 +112,47 @@ export default function Footer() {
         </div>
 
         <div
-          style={{
-            borderTop: "1px solid rgba(255,255,255,0.12)",
-            marginTop: "40px",
-            paddingTop: "22px",
-            textAlign: "center",
-            color: "#999",
-            fontSize: "13px",
-          }}
-        >
-          © 2026 Corfu Builders. All rights reserved.
-        </div>
+  style={{
+    borderTop: "1px solid rgba(255,255,255,0.12)",
+    marginTop: "40px",
+    paddingTop: "22px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: "20px",
+    flexWrap: "wrap",
+    color: "#999",
+    fontSize: "13px",
+  }}
+>
+  <div>© 2026 Corfu Builders. All rights reserved.</div>
+
+  <div
+    style={{
+      display: "flex",
+      gap: "18px",
+      flexWrap: "wrap",
+    }}
+  >
+    <a
+      href="/privacy-policy/"
+      style={{
+        color: "#c9b08a",
+      }}
+    >
+      Privacy Policy
+    </a>
+
+    <a
+      href="/cookies/"
+      style={{
+        color: "#c9b08a",
+      }}
+    >
+      Cookies Policy
+    </a>
+  </div>
+</div>
       </div>
     </footer>
   );
